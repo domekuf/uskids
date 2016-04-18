@@ -65,6 +65,9 @@
                     <!--li>
                         <a class="page-scroll" href="#portfolio">Le ultime invenzioni</a>
                     </li-->
+                    <li>
+                        <a class="page-scroll" href="#contact">Contatti</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -113,9 +116,9 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
     
+    <!-- Apre i menu dei dettagli -->
     <script src="js/uk/main.js"></script>
-	<script src="js/ajax_setup.js"></script>
-	
+
 </body>
  
 </html>
