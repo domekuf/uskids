@@ -74,28 +74,18 @@
 
     <header class="uk-fadeOut" >
         <div class="header-content">
-            <div class="header-content-inner">
+            <div id="siteContainer" class="header-content-inner">
             <img class="uk-fadeIn" style="width:100%" src="img/logo.png"/>
             </div>
         </div>
     </header>
 
+ 
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Chi Siamo</h2>
-                    <hr class="light">
-                    <p class="text-faded">
-                    Seguici su Facebook</p>
-                    <a  href="https://www.facebook.com/Romagnami-307688816030259" class="btn btn-default btn-xl wow bounceIn"><i class="fa fa-4x fa-facebook wow bounceIn text-primary"></i><br>
-                    <div style="margin:0 auto" class="fb-like" 
-                    data-href="https://www.facebook.com/Romagnami-307688816030259" 
-                    data-width="50" 
-                    data-layout="standard" 
-                    data-action="like" 
-                    data-show-faces="true" 
-                    data-share="false"></div></a>
+                    <p> Partita IVA e altre informazioni.</p>
                 </div>
             </div>
         </div>

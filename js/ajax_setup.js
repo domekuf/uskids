@@ -1,6 +1,6 @@
 function ajax_setup(){
 
-$("a").click(
+$("a.ajaxMenu").click(
     function(event) {
         event.preventDefault();
 		meth=$(this).attr('meth');
@@ -42,3 +42,7 @@ $("a").click(
 		});
 	});
 }
+
+$(document).ready(function() { 
+	ajax_setup();
+});
