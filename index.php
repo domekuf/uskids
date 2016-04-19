@@ -25,8 +25,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
     
+    <!-- Image Gallery -->
     
-    <!-- Dettagli CSS -->
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/bootstrap-image-gallery.css">
+    
+    <!-- UsKids CSS -->
     <link rel="stylesheet" href="css/uk/main.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -75,7 +79,21 @@
     <header class="uk-fadeOut" >
         <div class="header-content">
             <div id="siteContainer" class="header-content-inner">
-            <img class="uk-fadeIn" style="width:100%" src="img/logo.png"/>
+            	<div class="row">
+            		<div id="links" style="background:red; height:100px" class="col-xs-12">
+            		</div>
+            		<div style="background:green; height:100px" class="col-xs-2">
+            		</div>
+            		<div class="col-xs-8">
+            		<img class="uk-fadeIn img-responsive" src="img/logo.png"/>
+            		</div>
+            		<div style="background:green; height:100px" class="col-xs-2">
+            		</div><!-- 
+
+            		<div style="background:red; height:100px" class="col-xs-12">
+            		</div>
+ -->
+            	</div>
             </div>
         </div>
     </header>
@@ -102,8 +120,17 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
-    
+
+	<!-- Image Gallery -->
+	
+	<script src="js/jquery.blueimp-gallery.min.js"></script>
+	<script src="js/bootstrap-image-gallery.js"></script>
+	<script src="js/demo.js"></script>
+	
+	<!-- USKids -->
     <script src="js/uk/main.js"></script>
+    
+    <!--ajax Setup -->
 	<script src="js/ajax_setup.js"></script>
 	
 </body>
