@@ -25,13 +25,13 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
     
-    <!-- Image Gallery -->
-    
-    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
-	<link rel="stylesheet" href="css/bootstrap-image-gallery.css">
     
     <!-- UsKids CSS -->
     <link rel="stylesheet" href="css/uk/main.css" type="text/css">
+    
+    
+    <!-- UsKids CSS -->
+    <link rel="stylesheet" href="css/datepicker/bootstrap-datepicker.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,6 +41,12 @@
     <![endif]-->
 
 </head>
+<style>
+.img-grid{
+	padding-left:0px!important;
+	padding-right:0px!important;
+}
+</style>
 
 <body id="page-top">
 
@@ -57,18 +63,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+                <a class="navbar-brand page-scroll" href="/uskids/">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    
                     <?php
 						include('lib/menu.php');
 					?>
-                    <!--li>
-                        <a class="page-scroll" href="#portfolio">Le ultime invenzioni</a>
-                    </li-->
+					
+					
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -80,19 +86,14 @@
         <div class="header-content">
             <div id="siteContainer" class="header-content-inner">
             	<div class="row">
-            		<div id="links" style="background:red; height:100px" class="col-xs-12">
-            		</div>
-            		<div style="background:green; height:100px" class="col-xs-2">
-            		</div>
-            		<div class="col-xs-8">
+            	
+            		
+            		
+            		
+            		<div class="col-xs-12">
             		<img class="uk-fadeIn img-responsive" src="img/logo.png"/>
             		</div>
-            		<div style="background:green; height:100px" class="col-xs-2">
-            		</div><!-- 
-
-            		<div style="background:red; height:100px" class="col-xs-12">
-            		</div>
- -->
+            		
             	</div>
             </div>
         </div>
@@ -102,6 +103,26 @@
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
+            	
+            	<div class="img-grid col-xs-2">	
+            		<img class="img-responsive wow bounceIn" data-wow-delay=".2s" src="img/gallery/1.jpg"/>
+            	</div>
+            	<div  class="img-grid col-xs-2">
+            		<img class="img-grid img-responsive wow bounceIn" data-wow-delay=".4s" src="img/gallery/1.jpg"/>
+            	</div>
+            	<div  class="img-grid col-xs-2">
+            		<img class="img-grid img-responsive wow bounceIn" data-wow-delay=".6s" src="img/gallery/1.jpg"/>
+            	</div>
+            	<div  class="img-grid col-xs-2">
+            		<img class="img-grid img-responsive wow bounceIn" data-wow-delay=".8s" src="img/gallery/1.jpg"/>
+            	</div>
+            	<div  class="img-grid col-xs-2">
+            		<img class="img-grid img-responsive wow bounceIn" data-wow-delay="1s" src="img/gallery/1.jpg"/>
+            	</div>
+            	<div  class="img-grid col-xs-2">
+            		<img class="img-grid img-responsive wow bounceIn" data-wow-delay="1.2s" src="img/gallery/1.jpg"/>
+            	</div> 
+            		
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <p> Partita IVA e altre informazioni.</p>
                 </div>
@@ -121,17 +142,18 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
 
-	<!-- Image Gallery -->
-	
-	<script src="js/jquery.blueimp-gallery.min.js"></script>
-	<script src="js/bootstrap-image-gallery.js"></script>
-	<script src="js/demo.js"></script>
 	
 	<!-- USKids -->
     <script src="js/uk/main.js"></script>
     
     <!--ajax Setup -->
 	<script src="js/ajax_setup.js"></script>
+	
+	<!-- Bootstrap vaildator -->
+	<script src="js/validator.min.js"></script>
+	
+	<!-- Bootstrap datepicker -->
+	<script src="js/datepicker/bootstrap-datepicker.js"></script>
 	
 </body>
  
