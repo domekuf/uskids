@@ -1,4 +1,5 @@
 <?php
+$mail_cliente='lola@gmail.com';
 function file_list($d,$x){ 
        foreach(array_diff(scandir($d),array('.','..')) as $f)if(is_file($d.'/'.$f)&&(($x)?ereg($x.'$',$f):1))$l[]=$f; 
        return $l; 
@@ -13,6 +14,8 @@ foreach($lista_utenti as $u){
 
 }
 
+if($i<130){//massimo numero di iscritti
+
 $id_utente='uskids'.$i.'.usk';
 
 $utente = json_encode($_POST);
@@ -23,7 +26,16 @@ fclose($newfile);
 //Set useful variables for paypal form
 $paypal_url = 'https://www.sandbox.paypal.com/cgi-bin/webscr'; //Test PayPal API URL
 $paypal_id = 'domenicodiiorio6-facilitator@hotmail.it'; //Business Email
-echo('<h1>Registrazione Effettuata </h1><h2>ID: '.$id_utente);
+echo('<h1>Registrazione Effettuata </h1><h2>ID: '.$id_utente.'</h2>');
+
+?>
+
+<?php
+include('mail.php');
+
+$ret=sendMail('dome.diiorio@icloud.com','Registrazione ID: '.$id_utente,'dome.diiorio@icloud.com','Conferma iscrizione clicca qui per pagare.');
+
+echo('<h3> Controlla la tua mail</h3>');
 
 ?>
 
@@ -44,8 +56,14 @@ echo('<h1>Registrazione Effettuata </h1><h2>ID: '.$id_utente);
         <input type='hidden' name='return' value='http://www.fb.com/kufff'>
         
         <!-- Display the payment button. -->
-        <input type="image" name="submit" border="0"
-        src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="PayPal - The safer, easier way to pay online">
-        <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" >
+        <hr>
+        <h2>Paga Subito con PayPal</h2>
+        <button class="btn btn-danger" type="submit"><i class="fa fa-4x fa-paypal"></i></button>
     
 </form>
+
+<?php
+}else{
+	echo('<h1>Le Iscrizioni Online sono chiuse: </h1><h2>contattare: '.$mail_cliente.'</h2>');
+}
+?>
